@@ -1,0 +1,146 @@
+/* base */
+:root {
+    --font-family: "Poppins", sans-serif;
+    --second-family: "Roboto", sans-serif;
+    --third-family: "Inter", sans-serif;
+    --font3: "Gilroy", sans-serif;
+    --bakery-landing-1-background: #faf4ea;
+	--bakery-landing-1-s1: #31261a;
+	--bakery-landing-1-c2: #819b57;
+	--bakery-landing-1-s3: #465929;
+	--bakery-landing-1-s4: #a18268;
+	--bakery-landing-1-c5: #cfcfbc;
+	--beauty-landing-2-background: #fff;
+	--beauty-landing-2-s2: #2b7fff;
+	--beauty-landing-2-c1: #011c44;
+	--beauty-landing-2-c3: #4a4a4a;
+	--beauty-landing-2-s4: #ffd02b;
+	--beauty-landing-2-s5: #747272;
+	--beauty-landing-2-c6: #011f4a;
+	--dog-landing-3-background: #fff;
+	--dog-landing-3-s1: #ff9f0e;
+	--dog-landing-3-s2: #fcb62a;
+	--dog-landing-3-c3: #fffaf3;
+	--dog-landing-3-c4: #181817;
+	--dog-landing-3-c5: #f1f3ff;
+	--dog-landing-3-c6: #839aa9;
+	--dog-landing-3-s8: #f9f9ff;
+	--dog-landing-3-c9: #d9a6ff;
+	--dog-landing-3-c10: #ff6e9f;
+  }
+
+html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-family);
+    font-style: normal;
+    background: var(--bakery-landing-1-background);
+    color: var(--bakery-landing-1-s1);
+  }
+  
+  a,
+  button {
+    text-decoration: none;
+    font-style: normal;
+    cursor: pointer;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  /* _______________ */
+/* container styles  */
+header,
+footer,
+section {
+ margin: 0;
+ padding: 0;
+   overflow: hidden;
+}
+/* Mobile devices (320-374px) */
+.container {
+  margin: 0 auto;}
+
+  @media only screen and (min-width: 320px){
+    .container {
+      min-width: 320px;
+      max-width: 374px;
+      padding: 0 16px;
+    }
+}
+
+/* Small tablets & large phones (375-767px) */
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .container {
+    max-width: 767px;
+    padding: 0 20px;
+  }
+}
+
+/* Tablets (768-1279px) */
+@media only screen and (min-width: 768px){
+  .container {
+    max-width: 1279px;
+    padding: 0 32px;
+  }
+}
+
+/* Desktop (1280px+) */
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 100px;
+  }
+}
+/* reset styles  */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* styles */
