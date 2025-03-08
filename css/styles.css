@@ -129,7 +129,10 @@ img {
 }
 /* styles */
 /* header styles */
-.header-section {
+/* .header-section {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -139,14 +142,9 @@ img {
   top: 32px;
   left: 0;
   width: 100%;
-  z-index: 1000; /* Вышэй за мабільнае меню */
+  z-index: 1000; 
   transition: all 0.3s ease-in-out;
-  background: rgba(87, 111, 53, 0.9); /* Фон для мабільных */
-}
-.header {
-  position: absolute;
-  top: 0;
-  left: 0;
+  background: rgba(87, 111, 53, 0.9);
 }
 .header-nav {
   display: flex;
@@ -166,15 +164,12 @@ img {
  max-height: 798px;
  padding: 0;
  background: linear-gradient(127deg, rgba(18, 18, 17, 0.78) 0%, rgba(18, 18, 17, 0.6) 63.89%, rgba(18, 18, 17, 0) 100%), url(../images/bg-img.jpg);
- background-size: cover; /* Цалкам запаўняе фон */
- background-repeat: no-repeat; /* Пазбегнуць паўтарэння */
+ background-size: cover; /
+ background-repeat: no-repeat; 
  background-position: center;
 }
-.container-hero {
- 
-
-}
-.hero-header {
+.container-hero {} */
+/* .hero-header {
   padding: 272px 158px 0 159px;
   margin-bottom: 272px;
   font-family: var(--font-family);
@@ -198,4 +193,4 @@ max-width: 1440px;
 color: var(--bakery-landing-1-background);
 justify-content: center;
 align-items: center;
-}
+} */
