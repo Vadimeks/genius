@@ -71,40 +71,24 @@ footer,
 section {
  margin: 0;
  padding: 0;
-   overflow: hidden;
+overflow: hidden;
 }
 /* Mobile devices (320-374px) */
 .container {
   margin: 0 auto;}
 
-  @media only screen and (min-width: 320px){
-    .container {
-      min-width: 320px;
-      max-width: 374px;
-      padding: 0 16px;
-    }
-}
-
-/* Small tablets & large phones (375-767px) */
-@media only screen and (min-width: 375px) and (max-width: 767px) {
+  /* Small tablets & large phones (360-767px) */
+@media only screen and (min-width: 360px) and (max-width: 899px) {
   .container {
-    max-width: 767px;
-    padding: 0 20px;
-  }
-}
-
-/* Tablets (768-1279px) */
-@media only screen and (min-width: 768px){
-  .container {
-    max-width: 1279px;
-    padding: 0 32px;
+    max-width: 899px;
+    padding: 0 15px;
   }
 }
 
 /* Desktop (1280px+) */
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1440px) {
   .container {
-    max-width: 1280px;
+    max-width: 1440px;
     padding: 0 100px;
   }
 }
@@ -144,3 +128,74 @@ img {
   height: auto;
 }
 /* styles */
+/* header styles */
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: absolute;
+  top: 32px;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Вышэй за мабільнае меню */
+  transition: all 0.3s ease-in-out;
+  background: rgba(87, 111, 53, 0.9); /* Фон для мабільных */
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header-nav {
+  display: flex;
+}
+.logo {
+  fill: var(--bakery-landing-1-background);
+}
+.header-logo {
+}
+.nav-list {
+}
+.nav-item {
+}
+.order-btn {
+}
+.section-hero {
+ max-height: 798px;
+ padding: 0;
+ background: linear-gradient(127deg, rgba(18, 18, 17, 0.78) 0%, rgba(18, 18, 17, 0.6) 63.89%, rgba(18, 18, 17, 0) 100%), url(../images/bg-img.jpg);
+ background-size: cover; /* Цалкам запаўняе фон */
+ background-repeat: no-repeat; /* Пазбегнуць паўтарэння */
+ background-position: center;
+}
+.container-hero {
+ 
+
+}
+.hero-header {
+  padding: 272px 158px 0 159px;
+  margin-bottom: 272px;
+  font-family: var(--font-family);
+  font-size: 128px;
+  text-align: center;
+  color: var(--bakery-landing-1-c2);
+  max-height: 736px;
+}
+.header-span {
+  color: var(--bakery-landing-1-background);
+}
+.hero-list {
+  display: flex;
+  background-color: var(--bakery-landing-1-c2);
+  padding: 16px 0;
+  margin: 0 auto;
+height: 62px;
+backdrop-filter: blur(4px);
+gap: 160px; 
+max-width: 1440px;
+color: var(--bakery-landing-1-background);
+justify-content: center;
+align-items: center;
+}
