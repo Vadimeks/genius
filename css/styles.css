@@ -290,3 +290,53 @@ img {
   border-radius: 180px 200px 0 0;
   height: 466px;
 }
+/* section chefs styles */
+/* .section-chefs {
+} */
+.chefs-container {
+  padding-bottom: 96px;
+}
+/* .header-chefs {
+} */
+/* .chefs-span {
+} */
+.chefs-list {
+  display: flex;
+}
+.chefs-items {
+  display: flex;
+  width: 620px;
+}
+.chefs-img-cont {
+  position: relative; /* Каб размясціць элементы накладваннем */
+  width: 241px; /* Шырыня блока (памер фота) */
+  height: 390px; /* Высата блока (памер фота) */
+}
+.photo-wrapper {
+  position: absolute;
+  top: 16px; /* Зрушэнне ўніз */
+  left: 0; /* Зрушэнне ўлева */
+  width: 241px;
+  height: 390px;
+  border: 1px solid var(--bakery-landing-1-s4); /* Колер бордэра */
+  border-radius: 4px 4px 4px 200px; /* Скругленыя вуглы */
+  box-sizing: border-box; /* Каб бордэр улічваўся ў памеры */
+  z-index: 1; /* Каб бордэр быў ніжэй за фота */
+}
+.chefs-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 241px;
+  height: 390px;
+  object-fit: cover; /* Запаўненне фота без скажэнняў */
+  border-radius: 4px 4px 4px 200px; /* Такое ж скругленне, як у бордэра */
+  z-index: 2; /* Каб фота было зверху падкладкі */
+  padding-left: 16px;
+}
+/* .cheaf-article {
+} */
+/* .header-three-chefs {
+} */
+/* .chefs-text {
+} */
