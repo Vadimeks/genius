@@ -113,7 +113,7 @@ img {
 /* styles */
 /* header styles  */
 .header-section {
-  position: absolute;
+  position: fixed;
   top: 32px;
   left: 0;
   z-index: 1000;
@@ -123,18 +123,18 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1250px;
-  padding: 0;
+  max-width: 1440px;
+  padding: 0 95px;
   transition: all 0.3s ease-in-out;
-  background: transparent;
+  background: rgba(18, 18, 17, 0.4);
 }
-.header-nav {
-}
+/* .header-nav {
+} */
 .logo {
   fill: var(--bakery-landing-1-background);
 }
-.header-logo {
-}
+/* .header-logo {
+} */
 .nav-list {
   display: flex;
   flex-direction: row;
@@ -155,7 +155,6 @@ img {
 .nav-link.current {
   color: var(--bakery-landing-1-c2);
 }
-
 .nav-items .nav-link:hover,
 .nav-items .nav-link:focus,
 .nav-link.current {
@@ -225,10 +224,5 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-.hero-item {
-}
-
-/* 
-
-
- */
+/* .hero-item {
+} */
