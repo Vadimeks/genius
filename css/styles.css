@@ -113,7 +113,7 @@ img {
 /* styles */
 /* header styles  */
 .header-section {
-  position: absolute;
+  position: fixed;
   top: 32px;
   left: 0;
   z-index: 1000;
@@ -123,18 +123,23 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1250px;
-  padding: 0;
+  max-width: 1440px;
+  padding: 0 95px;
   transition: all 0.3s ease-in-out;
-  background: transparent;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.6) 38%,
+    rgba(0, 0, 0, 0.5) 30%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
 }
-.header-nav {
-}
+/* .header-nav {
+} */
 .logo {
   fill: var(--bakery-landing-1-background);
 }
-.header-logo {
-}
+/* .header-logo {
+} */
 .nav-list {
   display: flex;
   flex-direction: row;
@@ -155,7 +160,6 @@ img {
 .nav-link.current {
   color: var(--bakery-landing-1-c2);
 }
-
 .nav-items .nav-link:hover,
 .nav-items .nav-link:focus,
 .nav-link.current {
@@ -225,10 +229,64 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-.hero-item {
+/* .hero-item {
+} */
+/* traditions styles */
+.section-traditions {
+  background: var(--bakery-landing-1-background);
 }
 
-/* 
-
-
- */
+.container-traditions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 104px 100px 88px 100px;
+}
+.traditions-descr {
+  max-width: 620px;
+  max-height: 466px;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.header-traditions {
+  font-family: var(--font-family);
+  /* font-weight: 900; */
+  font-size: 64px;
+  line-height: 131%;
+  color: var(--bakery-landing-1-s1);
+}
+.text-traditions-list {
+  margin-bottom: 52px;
+}
+.text-traditions-list .text-traditions {
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+.text-traditions {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--bakery-landing-1-s1);
+  line-height: 1.5;
+}
+.span-traditions {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: var(--bakery-landing-1-c2);
+}
+.second-span {
+  font-weight: 600;
+  color: var(--bakery-landing-1-c2);
+  text-transform: none;
+}
+/* .traditions-img-block {
+} */
+.img-traditions {
+  border-radius: 180px 200px 0 0;
+  height: 466px;
+}
