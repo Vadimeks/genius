@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сучасна пекарня</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -17,97 +18,63 @@
 </head>
 
 <body>
-    <header class="header-section">
-        <div class="container container-header">
-            <a class="logo header-logo" href="#"><img src="./images/logo.svg" alt="Логотип Сучасна пекарня"></a>
-            <nav class="header-nav">
-
-                <ul class="nav-list">
-                    <li class="nav-items"><a href="#" class="nav-link current">Наші традиції</a></li>
-                    <li class="nav-items"><a href="#" class="nav-link">Шеф-кухарі</a></li>
-                    <li class="nav-items"><a href="#" class="nav-link">Формати</a></li>
-                    <li class="nav-items"><a href="#" class="nav-link">Контакти</a></li>
-                </ul>
-            </nav>
-            <button class="order-btn" type="button">Замовити дзвінок</button>
-            <button class="burger-btn" type="button">
-                <svg class="burger-icon" width="24" height="24">
-                    <use href="./images/sprite.svg#icon-burger-menu"></use>
-                </svg>
-            </button>
-        </div>
+    <header>
+        <nav>
+            <a href=""><img src="./images/logo.svg" alt="Логотип сучасной пекарні"></a>
+            <ul>
+                <li><a href="#" target="_blank">Франшиза</a></li>
+                <li><a href="#" target="_blank">Шеф-кухарі</a></li>
+                <li><a href="#" target="_blank">Формати</a></li>
+                <li><a href="#" target="_blank">Контакти</a></li>
+            </ul>
+        </nav>
+        <button type="button">Замовити дзвінок</button>
     </header>
     <main>
-        <section class="section-hero">
-            <div class="container container-hero">
-                <div class="main-screen">
-                    <h1 class="hero-header">Сучасна <span class="header-span">пекарня</span></h1>
-                </div>
-                <ul class="hero-list">
-                    <li class="hero-item">Великий попит на ринку</li>
-                    <li class="hero-item">Доступні за бюджетом формати</li>
-                    <li class="hero-item">Досвідчена управлінська команда</li>
-                </ul>
-            </div>
+        <section>
+            <h1>Сучасна пекарня</h1>
         </section>
-        <section class="section-traditions">
-            <div class="container container-traditions">
-                <div class="traditions-descr">
-                    <h2 class="header-traditions">Новий формат традиций</h2>
-                    <p class="text-traditions"><span class="span-traditions">shop bakery</span> — це пекарня, яка взяла
-                        все
-                        найкраще, і зберегла смак традиційної випічки та
-                        натуральність інгредієнтів.</p>
-                    <div class="text-traditions-list">
-                        <p class="text-traditions">Ми працюємо як найвідоміші мережі —<br>
-                            <span class="span-traditions second-span">5 хвилин і замовлення готове.</span><br>
-                        <p class="text-traditions">А ще у наших пекарень стильний дизайн</p>
-                        <p class="text-traditions">та висока якість обслуговування!
-                        </p>
-                    </div>
-                </div>
-                <div class="traditions-img-block">
-                    <img class="img-traditions" src="./images/baker-man.jpg"
-                        alt="Чоловік-пекарь дівітся на батон с посмішкой">
-                </div>
-            </div>
+        <section>
+            <ul>
+                <li>Великий попит на ринку</li>
+                <li>Доступні за бюджетом формати</li>
+                <li>Досвідчена управлінська команда</li>
+            </ul>
+            <h2>Новий формат традицій</h2>
+            <p><span>shop bakery</span> — це пекарня, яка взяла все найкраще, і зберегла смак
+                традиційної випічки та натуральність інгредієнтів.</p>
+            <p>Ми працюємо як найвідоміші мережі—
+                <span>5 хвилин і замовлення готове</span>.
+                А ще у наших пекарень стильний дизайн
+                та висока якість обслуговування!
+            </p>
+            <img src="./images/baker-man.jpg" alt="Чоловік пекар дивиться на батони із посмішкой">
         </section>
-        <section class="section-chefs">
-            <div class="container chefs-container">
-                <h2 class="header-chefs">Наши найкращи <span class="chefs-span">шеф-кухари</span></h2>
-                <ul class="chefs-list">
-                    <li class="chefs-items">
-                        <div class="chefs-img-cont">
-                            <div class="photo-wrapper"></div>
-                            <img class="chefs-img" src="./images/chef-nastya.jpg" alt="шеф-кухарь Настя">
-                        </div>
-                        <article class="cheaf-article">
-                            <h3 class="header-three-chefs">Настя</h3>
-                            <p class="chefs-text">Привіт, я Настя!</p>
-                            <p class="chefs-text">Вже 10 років, я свтілюю <br>
-                                у життя цікаві та смачні ідеї.</p>
-                            <p class="chefs-text">Я випічу для вас<br>
-                                найсмачніщі вироби!</p>
-                        </article>
-                    </li>
-                    <li class="chefs-items">
-                        <div class="chefs-img-cont">
-                            <div class="photo-wrapper"></div>
-                            <img class="chefs-img" src="./images/chef-vlad.jpg" alt="шеф-кухарь Влад">
-                        </div>
-                        <article class="cheaf-article">
-                            <h3 class="header-three-chefs">Влад</h3>
-                            <p class="chefs-text">Привіт, я Влад!</p>
-                            <p class="chefs-text">Мій кодитерський стаж вже 18 років.<br>
-                                SHOP BEKERY - це наша любов, з<br>
-                                якою ми ділимось кожен раз з Вами<br>
-                                через нашу випічку!</p>
-                            <p class="chefs-text">Я зроблю для вас унікальну начинку<br>
-                                на будь який смак!</p>
-                        </article>
-                    </li>
-                </ul>
-            </div>
+        <section>
+            <h2>Наші найкращі шеф -кухарі</h2>
+            <ul>
+                <li>
+                    <article>
+                        <h3>Настя</h3>
+                        <p>Привіт, я Настя!</p>
+                        <p>Вже 10 років, я свтілюю
+                            у життя цікаві та смачні ідеї.</p>
+                        <p>Я випічу для вас
+                            найсмачніщі вироби!</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Влад</h3>
+                        <p>Привіт, я Влад!</p>
+                        <p>Мій кодитерський стаж вже 18 років.SHOP BEKERY - це наша любов,
+                            з якою ми ділимось кожен раз з
+                            Вами через нашу
+                            випічку!</p>
+                        <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+                    </article>
+                </li>
+            </ul>
         </section>
         <section>
             <h2>Формати</h2>
@@ -128,38 +95,32 @@
                     </article>
                 </li>
             </ul>
-
-
-
         </section>
         <section>
-            <h2>Приеднуйтеся до мережи</h2>
+            <h2>Приєднуйся до мережі пекарень</h2>
         </section>
     </main>
     <footer>
         <nav>
-            <a href="#"><img src="./images/logo.svg" alt="Логотип Сучасна пекарня"></a>
+            <a href=""><img src="./images/logo.svg" alt="Логотип сучасной пекарні"></a>
             <ul>
-                <li><a href="#">Наші традиції</a></li>
-                <li><a href="#">Шеф-кухарі</a></li>
-                <li><a href="#">Формати</a></li>
-                <li><a href="#">Контакти</a></li>
+                <li><a href="#" target="_blank">Франшиза</a></li>
+                <li><a href="#" target="_blank">Шеф-кухарі</a></li>
+                <li><a href="#" target="_blank">Формати</a></li>
+                <li><a href="#" target="_blank">Контакти</a></li>
             </ul>
         </nav>
         <address>
             <ul>
                 <li><a href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
                 <li><a href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a></li>
-                <li><a href="https://g.co/kgs/CdBbVbk" target="_blank">Україна, м. Київ,
+                <li><a href="https://g.co/kgs/TdJAQUi">Україна, м. Київ,
                         вул. Січових Стрільців 54</a></li>
-                <li><a href="#">
-                        <!-- facebook icon -->
-                    </a></li>
-                <li><a href="#">
-                        <!-- instagram icon -->
-                    </a></li>
+                <li><a href="#">facebook-icon</a></li>
+                <li><a href="#">instagram-icon</a></li>
             </ul>
             <a href="#" target="_blank">Політика конфіденційності</a>
+            <p>© 2022 Дані захищені</p>
         </address>
     </footer>
 </body>
