@@ -1,96 +1,47 @@
-/* base + reset styles*/
-/* :root {
-  --font-family: "Poppins", sans-serif;
-  --second-family: "Roboto", sans-serif;
-  --third-family: "Inter", sans-serif;
-  --font3: "Gilroy", sans-serif;
-  --bakery-landing-1-background: #faf4ea;
-  --bakery-landing-1-s1: #31261a;
-  --bakery-landing-1-c2: #819b57;
-  --bakery-landing-1-s3: #465929;
-  --bakery-landing-1-s4: #a18268;
-  --bakery-landing-1-c5: #cfcfbc;
-  --beauty-landing-2-background: #fff;
-  --beauty-landing-2-s2: #2b7fff;
-  --beauty-landing-2-c1: #011c44;
-  --beauty-landing-2-c3: #4a4a4a;
-  --beauty-landing-2-s4: #ffd02b;
-  --beauty-landing-2-s5: #747272;
-  --beauty-landing-2-c6: #011f4a;
-  --dog-landing-3-background: #fff;
-  --dog-landing-3-s1: #ff9f0e;
-  --dog-landing-3-s2: #fcb62a;
-  --dog-landing-3-c3: #fffaf3;
-  --dog-landing-3-c4: #181817;
-  --dog-landing-3-c5: #f1f3ff;
-  --dog-landing-3-c6: #839aa9;
-  --dog-landing-3-s8: #f9f9ff;
-  --dog-landing-3-c9: #d9a6ff;
-  --dog-landing-3-c10: #ff6e9f;
+:root {
+  --color-brand-light: #819b57;
+  --color-brand-dark: #465929;
+  --color-primary-light: #faf4ea;
+  --color-primary-dark: #31261a;
 }
-html {
-  scroll-behavior: smooth;
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+/* Base */
+ul {
+  list-style-type: none;
 }
 body {
-  font-family: var(--font-family);
-  font-style: normal;
-  background: var(--bakery-landing-1-background);
-  color: var(--bakery-landing-1-s1);
+  color: var(--color-primary-dark);
 }
-header,
-footer,
-section {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-.container {
-  margin: 0 auto;
-}
-a,
-button {
-  text-decoration: none;
-  font-style: normal;
+/* Button */
+.button {
+  color: var(--color-primary-light);
+  border: 2px solid var(--color-brand-light);
+  background-color: var(--color-brand-light);
+  border-radius: 8px;
   cursor: pointer;
-  color: currentColor;
 }
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.button:hover {
+  color: var(--color-brand-dark);
+  background-color: transparent;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
+/* Section Header */
+.link {
+  color: var(--color-primary-light);
 }
-p:last-child {
-  margin-bottom: 0;
+.link:hover {
+  color: var(--color-brand-light);
 }
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+/* Section Hero */
+.hero-title {
+  color: var(--color-primary-light);
 }
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-} */
+.hero-title .accent {
+  color: var(--color-brand-light);
+}
+/* Section Advantages */
+.advantages-list {
+  background-color: var(--color-brand-light);
+  color: #faf4ea;
+}
+.section-title {
+  color: var(--color-primary-dark);
+}
