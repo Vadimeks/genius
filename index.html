@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -183,25 +183,25 @@
                     <div class="contact--form-container">
                         <h2 class="contact-main-title">Приєднуйся до мережі пекарень</h2>
                         <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-                        <form name="contact-form" autocomplete="off" novalidate>
+                        <form name="contact-form" autocomplete="off">
                             <div class="form-field">
                                 <label class="form-label visually-hidden" for="user-name">Ім'я</label>
                                 <input class="form-input" type=" text" name="user-name" id="user-name"
-                                    placeholder="Ім'я">
+                                    placeholder="Ім'я" required>
                             </div>
                             <div class="form-field">
                                 <label class="form-label visually-hidden" for="user-tel">Телефон</label>
                                 <input class="form-input" type=" text" name="user-tel" id="user-tel"
-                                    placeholder="Телефон">
+                                    placeholder="Телефон" required>
                             </div>
                             <div class="form-field">
                                 <label class="form-label visually-hidden" for="user-email">Електронна пошта</label>
                                 <input class="form-input" type=" text" name="user-email" id="user-email"
-                                    placeholder="Електронна пошта">
+                                    placeholder="Електронна пошта" required>
                             </div>
 
 
-                            <button class="form-button button" type="submit">Замовити дзвінок</button>
+                            <button class="form-button button" type="submit" disabled>Замовити дзвінок</button>
                             <p class="form-terms">Натискаючи на кнопку я погоджуюсь з <a class="form-terms-link"
                                     href="#">політикою
                                     конфіденційності</a></p>
@@ -267,7 +267,7 @@
         </div>
     </footer>
     <!-- Modal -->
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
         <div class="modal">
             <button type="button" class="modal-close-button">Close</button>
             <form name="modal-form" autocomplete="off" novalidate>
@@ -275,20 +275,20 @@
                 <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
                 <div class="form-field">
                     <label class="form-label visually-hidden" for="user-name">Ім'я</label>
-                    <input class="form-input" type=" text" name="user-name" id="user-name" placeholder="Ім'я">
+                    <input class="form-input" type="text" name="user-name" id="user-name" placeholder="Ім'я" required>
                 </div>
                 <div class="form-field">
                     <label class="form-label visually-hidden" for="user-tel">Телефон</label>
-                    <input class="form-input" type=" text" name="user-tel" id="user-tel" placeholder="Телефон">
+                    <input class="form-input" type="tel" name="user-tel" id="user-tel" placeholder="Телефон" required>
                 </div>
                 <div class="form-field">
                     <label class="form-label visually-hidden" for="user-email">Електронна пошта</label>
-                    <input class="form-input" type=" text" name="user-email" id="user-email"
-                        placeholder="Електронна пошта">
+                    <input class="form-input" type="email" name="user-email" id="user-email"
+                        placeholder="Електронна пошта" required>
                 </div>
 
 
-                <button class="form-button button" type="submit">Замовити дзвінок</button>
+                <button class="form-button button" type="submit" disabled>Замовити дзвінок</button>
                 <p class="form-terms">Натискаючи на кнопку я погоджуюсь з <a class="form-terms-link" href="#">політикою
                         конфіденційності</a></p>
             </form>

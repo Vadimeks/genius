@@ -1,44 +1,11 @@
+@import url();
 :root {
   --color-brand-light: #819b57;
   --color-brand-dark: #465929;
   --color-primary-light: #faf4ea;
   --color-primary-dark: #31261a;
-  --color-secondary-dark: #A28268;
+  --color-secondary-dark: #a28268;
   --color-brand-normal: #6c757d;
-}
-
-/* Base */
-*,
-::after,
-::before {
-  box-sizing: border-box;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-p {
-  margin: 0;
-}
-
-body {
-  /* color: var(--color-primary-dark); */
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.5;
-
-}
-
-address {
-  font-style: normal;
-}
-
-a {
-  display: inline-block;
 }
 
 /* Button */
@@ -57,18 +24,22 @@ a {
   background-color: transparent;
 }
 
-.container {
-  padding: 0 100px;
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
+}
+
+.section {
+  padding: 48px 0;
+}
+
+.container {
+  padding: 0 24px;
+  max-width: 1288px;
+  margin: 0 auto;
 }
 
 /* Section Header */
@@ -113,7 +84,7 @@ a {
 
 /* Section Hero */
 .hero-section {
-  background-image: linear-gradient(127deg, rgba(18, 18, 17, 0.78) 0%, rgba(18, 18, 17, 0.6) 63.89%, rgba(18, 18, 17, 0) 100%), url('../images/bg-img.jpg');
+  background-image: linear-gradient(127deg, rgba(18, 18, 17, 0.78) 0%, rgba(18, 18, 17, 0.6) 63.89%, rgba(18, 18, 17, 0) 100%), url("../images/bg-img.jpg");
   padding: 272px 0;
   background-repeat: no-repeat;
   background-position: center top;
@@ -156,7 +127,6 @@ a {
 }
 
 /* Section Traditions */
-
 .traditions-section {
   background-color: var(--color-primary-light);
   padding: 48px 0;
@@ -186,7 +156,6 @@ a {
   font-size: 64px;
   margin-bottom: 42px;
 }
-
 
 .traditions-text .accent {
   text-transform: uppercase;
@@ -225,7 +194,7 @@ header {
 
 .chefs-main-title::before,
 .chefs-main-title::after {
-  content: '';
+  content: "";
   display: block;
   width: 352px;
   border: 2px solid #cfcfbc;
@@ -249,7 +218,7 @@ header {
 }
 
 .chefs-item {
-  flex-basis: calc(100%/2 - 30px);
+  flex-basis: calc(50% - 30px);
 }
 
 .chefs-card {
@@ -342,7 +311,7 @@ header {
 }
 
 .formats-item {
-  flex-basis: calc((100% - 40px)/3);
+  flex-basis: calc((100% - 40px) / 3);
 }
 
 .formats-article {
@@ -356,7 +325,6 @@ header {
 
 .formats-article:hover {
   transform: scale(1.05);
-
 }
 
 .format-title {
@@ -399,7 +367,7 @@ header {
 
 /* footer */
 .footer-section {
-  background-image: url('../images/footer-background.png');
+  background-image: url("../images/footer-background.png");
   background-color: var(--color-primary-dark);
   padding: 32px 0;
   position: relative;
@@ -469,7 +437,7 @@ header {
 .footer-section::after {
   position: absolute;
   bottom: 0;
-  content: '';
+  content: "";
 }
 
 .footer-section::before {
@@ -477,11 +445,11 @@ header {
   height: 120px;
   left: 0;
   background-repeat: no-repeat;
-  background-image: url('../images/decor-bread-small.png');
+  background-image: url("../images/decor-bread-small.png");
 }
 
 .footer-section::after {
-  background-image: url('../images/decor-bread-mix.png');
+  background-image: url("../images/decor-bread-mix.png");
   width: 380px;
   height: 190px;
   right: 0;
@@ -550,10 +518,20 @@ header {
   outline: none;
 }
 
+.form-input::-moz-placeholder {
+  color: var(--color-secondary-dark);
+  font-size: 16px;
+  line-height: 1.17;
+}
+
 .form-input::placeholder {
   color: var(--color-secondary-dark);
   font-size: 16px;
   line-height: 1.17;
+}
+
+.form-input:focus::-moz-placeholder {
+  color: var(--color-primary-dark);
 }
 
 .form-input:focus::placeholder {
@@ -577,4 +555,4 @@ header {
 .form-terms-link {
   color: var(--color-primary-dark);
   text-underline-offset: 2px;
-}
+}/*# sourceMappingURL=main.css.map */
