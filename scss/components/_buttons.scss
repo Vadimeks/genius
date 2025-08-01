@@ -1,0 +1,15 @@
+/* Button */
+.button {
+  color: var(--color-primary-light);
+  border: 2px solid var(--color-brand-normal);
+  background-color: var(--color-brand-normal);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 16px 32px;
+}
+
+.button:hover {
+  color: var(--color-brand-dark);
+  background-color: transparent;
+}
