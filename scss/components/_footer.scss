@@ -2,14 +2,15 @@
 .footer-section {
   background-image: url("../images/footer-background.png");
   background-color: var(--color-primary-dark);
-  padding: 32px 0;
-  position: relative;
+  padding: 32px 0 0 0;
 }
 
 .footer-container {
   display: flex;
   gap: 20px;
   margin: 0 auto;
+  position: relative;
+  height: 240px;
 }
 
 .footer-nav {
@@ -66,24 +67,24 @@
   font-size: 14px;
 }
 
-.footer-section::before,
-.footer-section::after {
+.footer-container::before,
+.footer-container::after {
   position: absolute;
   bottom: 0;
   content: "";
 }
 
-.footer-section::before {
+.footer-container::before {
   width: 180px;
   height: 120px;
-  left: 0;
+  left: -200px;
   background-repeat: no-repeat;
   background-image: url("../images/decor-bread-small.png");
 }
 
-.footer-section::after {
+.footer-container::after {
   background-image: url("../images/decor-bread-mix.png");
   width: 380px;
   height: 190px;
-  right: 0;
+  right: -100px;
 }
