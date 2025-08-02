@@ -1,0 +1,25 @@
+/* Contact-section */
+.contact-section {
+  padding: 48px 0;
+  background-color: var(--color-primary-light);
+}
+
+.contact-main-title {
+  color: var(--color-primary-dark);
+  font-family: Poppins, sans-serif;
+  font-weight: 900;
+  line-height: 1.3;
+  font-size: 60px;
+  margin: 0 auto 20px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 32px;
+}
+
+.contact-map {
+  flex-shrink: 0;
+  border: none;
+  border-radius: 16px;
+}
