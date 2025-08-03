@@ -1,76 +1,42 @@
 /* Chefs-section */
-.chefs-section {
+.chefs {
   background-color: var(--color-primary-light);
-  padding: 48px 0;
-}
+  &__main-title {
+    color: var(--color-primary-dark);
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    font-weight: 900;
+    line-height: 1.3;
+    font-size: 64px;
+    margin: 0 auto 80px;
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      width: 352px;
+      border: 2px solid var(--color-brand-light);
+      position: absolute;
+      bottom: 24px;
+    }
 
-.chefs-main-title {
-  color: var(--color-primary-dark);
-  font-family: Poppins, sans-serif;
-  text-align: center;
-  font-weight: 900;
-  line-height: 1.3;
-  font-size: 64px;
-  margin: 0 auto 80px;
-  position: relative;
-}
+    &::before {
+      left: 0px;
+    }
 
-.chefs-main-title::before,
-.chefs-main-title::after {
-  content: "";
-  display: block;
-  width: 352px;
-  border: 2px solid var(--color-brand-light);
-  position: absolute;
-  bottom: 24px;
-}
+    &::after {
+      right: 0px;
+    }
+  }
 
-.chefs-main-title::before {
-  left: 0px;
-}
+  &__list {
+    display: flex;
+    gap: 40px 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
-.chefs-main-title::after {
-  right: 0px;
-}
-
-.chefs-list {
-  display: flex;
-  gap: 40px 30px;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.chefs-item {
-  flex-basis: calc(100% / 2 - 30px);
-}
-
-.chefs-card {
-  display: flex;
-  gap: 30px;
-}
-
-.chefs-info {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.chefs-title {
-  font-weight: 600;
-  font-size: 40px;
-  margin: 0;
-}
-
-.chefs-text p {
-  margin-bottom: 24px;
-}
-
-.chefs-text p:last-child {
-  margin-bottom: 0;
-}
-
-.chefs-image {
-  border-radius: 4px 4px 4px 200px;
-  box-shadow: -16px 16px 0 0 var(--color-primary-light),
-    -16px 16px 0 2px var(--color-secondary-dark);
+  &__item {
+    flex-basis: calc(100% / 2 - 30px);
+  }
 }

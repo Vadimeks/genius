@@ -2,17 +2,22 @@
 @import "./utils/variables";
 
 @import "./utils/utils";
+@import "./utils/texts";
 @import "./components/buttons";
 @import "./components/links";
+@import "./components/section";
 @import "base";
 @import "./components/header";
 @import "./components/hero-section";
 @import "./components/advantages-section";
 @import "./components/traditions-section";
 @import "./components/chefs-section";
+@import "./components/chef-card";
 @import "./components/formats-section";
+@import "./components/format-card";
 @import "./components/carousel";
 @import "./components/contact-section";
+@import "./components/forms";
 @import "./components/footer";
 @import "./components/modal";
 @import "./components/modal-form";
